@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Aplicación Médica</title>
+    <!-- Incluye los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Incluye jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Estilos personalizados para el menú izquierdo y el título -->
+    <style>
+        .menu-izquierdo {
+            position: fixed;
+            top: 14%;
+            left: 0;
+            bottom: 0;
+            width: 250px;
+            background-color: #343a40; /* Fondo oscuro similar al de ChatGPT */
+            padding-top: 20px;
+        }
+        .menu-izquierdo h2 {
+            color: #fff; /* Texto en blanco */
+            text-align: center;
+        }
+        .menu-izquierdo ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu-izquierdo li {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .menu-izquierdo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .menu-izquierdo a:hover {
+            text-decoration: underline;
+        }
+        .titulo {
+            background-color: #343a40; /* Mismo color de fondo que el menú */
+            color: #fff; /* Texto en blanco */
+            text-align: center;
+            padding: 20px 0; /* Espaciado interior */
+        }
+    </style>
+</head>
+<body>
+    <header class="titulo">
+        <h1>Proyecto Pacientes</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="menu-izquierdo col-md-3">
+                <h2>Menú</h2>
+                <ul>
+                    <li><a href="#">Crear Doctores</a></li>
+                    <li><a href="#">Crear Pacientes</a></li>
+                    <li><a href="#">Crear Citas</a></li>
+                    <li><a href="#">Listar Pacientes</a></li>
+                    <li><a href="#">Listar Doctores</a></li>
+                    <li><a href="#">Listar Citas</a></li>
+                </ul>
+            </nav>
+            <div class="col-md-9">
+                <!-- Contenido de los módulos aquí -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluye los scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
