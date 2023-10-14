@@ -1,0 +1,49 @@
+.menu-izquierdo {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #343a40; /* Fondo oscuro similar al de ChatGPT */
+    padding-top: 120px;
+}
+.menu-izquierdo h2 {
+    color: #fff; /* Texto en blanco */
+    text-align: center;
+}
+.menu-izquierdo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-izquierdo li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.menu-izquierdo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu-izquierdo a:hover {
+    text-decoration: underline;
+}
+.titulo {
+    background-color: #343a40; /* Mismo color de fondo que el menú */
+    color: #fff; /* Texto en blanco */
+    text-align: center;
+    padding: 20px 0; /* Espaciado interior */
+}
+.footer{
+    background-color: #343a40;
+    color: #fff; /* Texto en blanco */
+    text-align: center;
+    padding: 20px 0; /* Espaciado interior */
+}
+.divIndex{
+   
+    top: 0%;
+    left: 0;
+    bottom: 0;
+    padding-top: 32%;
+}
