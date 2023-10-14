@@ -1,6 +1,6 @@
 .menu-izquierdo {
     position: fixed;
-    top: 0%;
+    top: 0;
     left: 0;
     bottom: 0;
     width: 250px;
@@ -39,11 +39,21 @@
     color: #fff; /* Texto en blanco */
     text-align: center;
     padding: 20px 0; /* Espaciado interior */
+    width: 100%; /* Ocupar el 100% del ancho de la pantalla */
+    
 }
-.divIndex{
+.IndexImangen{
    
-    top: 0%;
+    top: 0;
     left: 0;
     bottom: 0;
-    padding-top: 32%;
+    padding: 0;
+    width: 290%; /* Establece el ancho deseado */
+    height: auto; /* Permite que el alto se ajuste automáticamente */
+     
+}
+
+.divIndex{
+    
+    margin-left: 23%;
 }
