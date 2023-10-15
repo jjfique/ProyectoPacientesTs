@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Aplicación Médica</title>
+    <!-- Incluye los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Incluye jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Estilos personalizados para el menú izquierdo y el título -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="titulo">
+        <h1>Proyecto Pacientes</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="menu-izquierdo col-md-3">
+                <h2>Menú</h2>
+                <ul>
+                    <li><a href="#">Crear Doctores</a></li>
+                    <li><a href="#">Crear Pacientes</a></li>
+                    <li><a href="#">Crear Citas</a></li>
+                    <li><a href="#">Listar Pacientes</a></li>
+                    <li><a href="#">Listar Doctores</a></li>
+                    <li><a href="#">Listar Citas</a></li>
+                </ul>
+            </nav>
+            <div class="col-md-5 container">
+                <div class="container mt-5">
+                    <legend class="text-center">Crear Pacientes</legend>
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" id="ImputNombre" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" id="ImputApellido" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="LabelSelect" class="form-label">Tipo de documento</label>
+                            <select id="SelectTipoDocumento" class="form-select">
+                                <option>cedula</option>
+                                <option>Tarjeta de identidad</option>
+                                <option>Registro civil</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="NumeroDocumento" class="form-label">Numero de documento </label>
+                            <input type="text" id="ImputNumeroDocumento" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Correo" class="form-label">Edad</label>
+                            <input type="email" id="ImputCorreo" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Correo" class="form-label">Telefono</label>
+                            <input type="email" id="ImputCorreo" class="form-control">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary mb-4 ">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Created by Jonathan Fique</p>
+    </footer>
+    <!-- Incluye los scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
