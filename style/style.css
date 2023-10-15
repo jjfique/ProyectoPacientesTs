@@ -42,7 +42,7 @@
     width: 100%; /* Ocupar el 100% del ancho de la pantalla */
     position: fixed;
     bottom: 0;
-    
+    z-index: 1; /* Añade un valor de z-index para estar por encima del contenido */
 }
 .IndexImangen{
    
@@ -58,4 +58,7 @@
 .divIndex{
     
     margin-left: 23%;
+}
+#contenido {
+    margin-bottom: 70px; /* Ajusta este valor según la altura de tu footer */
 }
