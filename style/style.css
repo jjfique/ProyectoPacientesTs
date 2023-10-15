@@ -40,6 +40,8 @@
     text-align: center;
     padding: 20px 0; /* Espaciado interior */
     width: 100%; /* Ocupar el 100% del ancho de la pantalla */
+    position: fixed;
+    bottom: 0;
     
 }
 .IndexImangen{

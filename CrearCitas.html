@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Aplicación Médica</title>
+    <!-- Incluye los estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Incluye jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Estilos personalizados para el menú izquierdo y el título -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="titulo">
+        <h1>Proyecto Pacientes</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="menu-izquierdo col-md-3">
+                <h2>Menú</h2>
+                <ul>
+                    <li><a href="#">Crear Doctores</a></li>
+                    <li><a href="#">Crear Pacientes</a></li>
+                    <li><a href="#">Crear Citas</a></li>
+                    <li><a href="#">Listar Pacientes</a></li>
+                    <li><a href="#">Listar Doctores</a></li>
+                    <li><a href="#">Listar Citas</a></li>
+                </ul>
+            </nav>
+            <div class="col-md-5 container">
+                <div class="container mt-5">
+                    <legend class="text-center">Crear Citas</legend>
+                    <form>
+                        <div class="mb-3">
+                            <label for="LabelSelect" class="form-label">Medico</label>
+                            <select id="SelectTipoDocumento" class="form-select">
+                                <option>Seleccione</option>
+                                <option>Juan carlos </option>
+                                <option>Danel armando </option>
+                                <option>Juan camilo</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="LabelSelect" class="form-label">Paciente</label>
+                            <select id="SelectTipoDocumento" class="form-select">
+                                <option>Seleccione</option>
+                                <option>Carlos armando</option>
+                                <option>Patricia  </option>
+                                <option>Steven</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="disabledSelect" class="form-label">Especialidad</label>
+                            <select id="SelectEspecialidad" class="form-select">
+                                <option>Seleccione</option>
+                                <option>Medicina general</option>
+                                <option>Cardiología</option>
+                                <option>Medicina interna</option>
+                                <option>Dermatología</option>
+                                <option>Rehabilitación física</option>
+                                <option>Psicología</option>
+                                <option>Odontología</option>
+                                <option>Radiología</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Consultorio" class="form-label">Fecha de la cita</label>
+                            <input type="datetime-local" id="datetime" name="datetime" class="form-control">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary mb-4 ">Asigan cita</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Created by Jonathan Fique</p>
+    </footer>
+    <!-- Incluye los scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
