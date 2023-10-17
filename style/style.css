@@ -62,3 +62,28 @@
 #contenido {
     margin-bottom: 70px; /* Ajusta este valor según la altura de tu footer */
 }
+
+#contenidoListar {
+    margin-bottom: 70px; 
+    margin-left: 30%;
+}
+
+.mi-tabla {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.mi-tabla th {
+    background-color: #0609b6c5;
+    color: #fff;
+}
+
+.mi-tabla th, .mi-tabla td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.mi-tabla tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

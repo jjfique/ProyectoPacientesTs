@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Aplicación Médica</title>
+    <!-- Agrega los enlaces a DataTables CSS y JavaScript -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap4.min.css">
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap4.min.js"></script>      
+     <!-- Incluye los estilos de Bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+     <!-- Incluye jQuery -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="titulo">
+        <h1>Proyecto Pacientes</h1>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="menu-izquierdo col-md-3">
+                <h2>Menú</h2>
+                <ul>
+                    <li><a href="#">Crear Doctores</a></li>
+                    <li><a href="#">Crear Pacientes</a></li>
+                    <li><a href="#">Crear Citas</a></li>
+                    <li><a href="#">Listar Pacientes</a></li>
+                    <li><a href="#">Listar Doctores</a></li>
+                    <li><a href="#">Listar Citas</a></li>
+                </ul>
+            </nav>
+            <div class="col-md-7 container" id="contenidoListar">
+                <div class="container mt-5" >
+                    <legend class="text-center">Listar Citas</legend>
+                    <div class="container table-responsive" id="divResultados" >
+                        <table class="table table-bordered mi-tabla" id="TbResultados">
+                            <thead>
+                                <tr >
+                                    <th>Medico</th>
+                                    <th>Paciente</th>
+                                    <th>Especialidad</th>
+                                    <th>Fecha de cita </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Los datos se cargarán automáticamente aquí -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Created by Jonathan Fique</p>
+    </footer>
+    <!-- Incluye los scripts de Bootstrap y jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
