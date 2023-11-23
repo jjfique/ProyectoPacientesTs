@@ -9,7 +9,7 @@
     <!-- Incluye jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Estilos personalizados para el menú izquierdo y el título -->
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header class="titulo">
@@ -26,34 +26,23 @@
                     <li><a href="ListarPacientes.html">Listar Pacientes</a></li>
                     <li><a href="ListarMedicos.html">Listar Doctores</a></li>
                     <li><a href="ListarCitas.html">Listar Citas</a></li>
-                    </ul>
+                </ul>
             </nav>
-            <div class="col-md-5 container " id="contenido">
+            <div class="col-md-5 container" id="contenido">
                 <div class="container mt-5">
-                    <legend class="text-center">Crear Citas</legend>
+                    <legend class="text-center">Crear Doctores</legend>
                     <form>
                         <div class="mb-3">
-                            <label for="LabelSelect" class="form-label">Medico</label>
-                            <select id="SelectTipoDocumento" class="form-select">
-                                <option>Seleccione</option>
-                                <option>Juan carlos </option>
-                                <option>Danel armando </option>
-                                <option>Juan camilo</option>
-                            </select>
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" id="ImputNombre" class="form-control">
                         </div>
                         <div class="mb-3">
-                            <label for="LabelSelect" class="form-label">Paciente</label>
-                            <select id="SelectTipoDocumento" class="form-select">
-                                <option>Seleccione</option>
-                                <option>Carlos armando</option>
-                                <option>Patricia  </option>
-                                <option>Steven</option>
-                            </select>
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" id="ImputApellido" class="form-control">
                         </div>
                         <div class="mb-3">
                             <label for="disabledSelect" class="form-label">Especialidad</label>
                             <select id="SelectEspecialidad" class="form-select">
-                                <option>Seleccione</option>
                                 <option>Medicina general</option>
                                 <option>Cardiología</option>
                                 <option>Medicina interna</option>
@@ -65,11 +54,15 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="Consultorio" class="form-label">Fecha de la cita</label>
-                            <input type="datetime-local" id="datetime" name="datetime" class="form-control">
+                            <label for="Consultorio" class="form-label">Consultorio</label>
+                            <input type="text" id="ImputConsultorio" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Correo" class="form-label">Correo</label>
+                            <input type="email" id="ImputCorreo" class="form-control">
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary mb-4 ">Asigan cita</button>
+                            <button type="submit" class="btn btn-primary mb-4 ">Submit</button>
                         </div>
                     </form>
                 </div>
