@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 import pacienteRoutes from './routes/paciente.routes'
 import doctorRoutes from './routes/doctor.routes'
 import citaRoutes from './routes/citas.routes'
+import consultoriosRoutes from './routes/consultorio.routes'
 
 dotenv.config();
 
@@ -24,6 +25,7 @@ app.get('/', (req: Request, res: Response) => {
 app.use('/api/pacientes', pacienteRoutes)
 app.use('/api/doctores', doctorRoutes)
 app.use('/api/citas', citaRoutes)
+app.use('/api/consultorios', consultoriosRoutes)
 
 // Error de rutas
 app.use( (req: Request, res: Response) => {

@@ -43,20 +43,32 @@ export const getPacienteById: RequestHandler = async (req, res) => {
 
 export const createPaciente: RequestHandler = async (req, res) => {
   try {
-    const paciente = await Paciente.create(req.body)
+    // Validar datos antes de crear el paciente
+    const { id_numeroCedula, nombre, apellido, fecha_nacimiento, telefono } = req.body;
+
+    if (!id_numeroCedula || !nombre || !apellido || !fecha_nacimiento || !telefono) {
+      return res.status(400).json({ message: 'Todos los campos son requeridos.' });
+    }
+     //Valida si el paciewnte ya existe 
+     const paciente = await Paciente.findByPk(id_numeroCedula);
+    
+    if (paciente) {
+      return res.status(400).json({ message: 'El paciente ya existe' });
+    }
+    const ValidarPaciente = await Paciente.create(req.body);
 
     res.status(201).json({
       message: 'Paciente creado!',
       data: paciente
-    })
+    });
   } catch (error) {
     const err = error as Error;
     res.status(500).json({
       message: 'No se pudo crear el paciente',
       error: err.stack
-    })
+    });
   }
-}
+};
 
 export const updatePaciente: RequestHandler = async (req, res) => {
   try {

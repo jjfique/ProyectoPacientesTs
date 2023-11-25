@@ -1,6 +1,7 @@
 import { Table, Column, Model, DataType, PrimaryKey, ForeignKey, BelongsTo } from 'sequelize-typescript';
 import { Doctor } from './doctores.model'
 import { Paciente } from './paciente.model'
+import { Consultorio } from './consultorio.model'
 
 @Table({
   timestamps: false,
@@ -29,8 +30,19 @@ export class Cita extends Model {
     allowNull: false,
   })
   id_numeroCedula!: number
+
+  @PrimaryKey
+  @ForeignKey( () => Consultorio)
+  @Column({
+    type: DataType.INTEGER,
+    allowNull: false,
+  })
+  Numero_consultorio!: number
+
   @BelongsTo( () => Doctor)
   doctor!: Doctor;
   @BelongsTo( () => Paciente)
   paciente!: Paciente;
+  @BelongsTo( () => Consultorio)
+  Consultorio!: Consultorio;
 }
