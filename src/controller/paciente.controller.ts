@@ -50,12 +50,12 @@ export const createPaciente: RequestHandler = async (req, res) => {
       return res.status(400).json({ message: 'Todos los campos son requeridos.' });
     }
      //Valida si el paciewnte ya existe 
-     const paciente = await Paciente.findByPk(id_numeroCedula);
+     const ValidarPaciente = await Paciente.findByPk(id_numeroCedula);
     
-    if (paciente) {
+    if (ValidarPaciente) {
       return res.status(400).json({ message: 'El paciente ya existe' });
     }
-    const ValidarPaciente = await Paciente.create(req.body);
+    const paciente = await Paciente.create(req.body);
 
     res.status(201).json({
       message: 'Paciente creado!',
