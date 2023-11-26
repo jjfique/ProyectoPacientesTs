@@ -10,17 +10,17 @@ JORGE JONATHAN FIQUE CAMACHO
 BOGOTÁ
 NOVIEMBRE DE 2023
 
+
+
 API PACIENTES
 consultar todos los pacientes 
-
 ![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/5aa7a0eb-5093-4e16-a76e-07de58654004)
+
 consultar por id 
-
 ![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/6c1c8fc9-271e-461c-9c3d-aa1b7555b1c6)
-crear paciente   
 
+crear paciente   
 ![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/a2a1ab0d-2cc3-4414-a423-d6b07fc3a909)
-![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/46b20c94-57f4-4a99-bcca-10f7a5c99953)
 
 se realiza actualización del paciente por id 
 ![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/dfbd325d-eb00-43c9-b6a5-e4bf3ec8cb4b)
