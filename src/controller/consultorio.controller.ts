@@ -98,7 +98,7 @@ export const deleteConsultorio: RequestHandler = async (req, res) => {
     if(consultorio){
       await Consultorio.destroy({
         where: {
-          id_numeroCedula: req.params.id
+          Numero_consultorio: req.params.id
         }
       })
       res.status(200).json({
