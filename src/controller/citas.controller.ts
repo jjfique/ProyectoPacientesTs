@@ -69,13 +69,14 @@ export const createCita: RequestHandler = async (req, res) => {
 
 export const updateCita: RequestHandler = async (req, res) => {
   try {
-    const { profesional, paciente, fecha } = req.query
+    const { profesional, paciente, fecha ,consultorio } = req.query
 
     const cita = await Cita.findOne({
       where: {
         fecha_hora: fecha,
         id_profesional: profesional,
-        id_numeroCedula: paciente
+        id_numeroCedula: paciente,
+        Numero_consultorio: consultorio
     }
     })
 
@@ -84,7 +85,8 @@ export const updateCita: RequestHandler = async (req, res) => {
         where: {
           fecha_hora: fecha,
           id_profesional: profesional,
-          id_numeroCedula: paciente
+          id_numeroCedula: paciente,
+          Numero_consultorio: consultorio
       }
     })
     res.status(200).json({
