@@ -1,5 +1,5 @@
  # DESARROLLO WEB BACK-END INTERMEDIO 
- ### Api con express 
+ ### Api con  Node JS, Express y TypeScript. 
 Actividad calificable unidad 6
 
 DOCENTE:
@@ -10,7 +10,7 @@ JORGE JONATHAN FIQUE
 
 BOGOTÁ NOVIEMBRE DE 2023
 
-Pruebas unitarias
+# Pruebas unitarias
 
  ### API PACIENTES
 
@@ -85,7 +85,23 @@ eliminar doctor
 
 ![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/e957d818-41fa-46d5-9d19-f2a0c048f444)
 
+ ### API DE CITAS
 
+crear citas
+
+![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/0096e592-9398-439d-82bd-ee5836e0ebc8)
+
+consultar citas
+
+![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/d8991d60-eb58-4ac6-bd6c-5df9664a99b6)
+
+actualizar cita 
+
+![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/1b27729d-7dcd-4b64-bc1e-86714670b5d6)
+
+eliminar cita 
+
+![image](https://github.com/jjfique/ProyectoPacientesTs/assets/31571516/9e221d31-5a7c-49a3-99a3-b9a64812e62a)
 
 
 
